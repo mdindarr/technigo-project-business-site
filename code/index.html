@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Business name 🌻</h1>
 
-    <!-- Video or image as a header is cool :) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marals Business Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Signup form -->
+<body>
+  <header>
+    <div class="header-navigation">
+      <a href="/" class="website-logo">
+        <img src="Assets/Technigo-logo.svg" alt="website-logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Reviews</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  </body>
+  <h1>Marals Business name ✨</h1>
+  <div class="header-card">
+    <video autoplay muted loop controls>
+      <source src="Assets/high-five-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="text-header-card">
+      <h2>Sign up to the best form</h2>
+      <p>
+        You can sign up here to the best form you have ever seen. After subscribing tot his form, you wish you could do
+        it again.
+      </p>
+    </div>
+  </div>
+
+  <form action="http://httpbin.org/anything" method="post">
+    <label for="message">Message on your shirt</label>
+    <input id="message" type="text" name="message" required placeholder="Write your message">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required placeholder="example@email.com">
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" placeholder="********">
+    <fieldset class="radio-group">
+      <legend>Choose your t-shirt size:</legend>
+
+      <div class="radio-option">
+        <input type="radio" id="size-s" name="tshirtSize" value="s">
+        <label for="size-s">Small</label>
+      </div>
+
+      <div class="radio-option">
+        <input type="radio" id="size-m" name="tshirtSize" value="m">
+        <label for="size-m">Medium</label>
+      </div>
+
+      <div class="radio-option">
+        <input type="radio" id="size-l" name="tshirtSize" value="l">
+        <label for="size-l">Large</label>
+      </div>
+
+    </fieldset>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="Checkbox" value="yes">
+        Subscribe to newsletter
+      </label>
+    </div>
+    <button type="submit">Submit order</button>
+  </form>
+  <br>
+
+
+</body>
+
+<footer>
+  <p>Copyright © 2026 Marals Business name</p>
+</footer>
+<br>
+
 </html>
